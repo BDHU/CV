@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \documentclass[]{deedy-resume-openfont}
+
+    \begin{document}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Edward}{Hu}{bodunhu@utexas.edu | 5125170598 | https://bdhu.github.io/}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\raggedright
+
+\runsubsection{The University of Texas at Austin}\descript{| BS Computer Science\& Mathematics}\hfill \location{Austin, TX | January 2016 - May 2020}\\
+GPA: 3.72\\
+\sectionsep
+  
+
+\runsubsection{Coursework}\\
+Concurrency, Operating Systems, Computer Architecture, Algorithms and Complexity, Data Structure, Computational Intelligence in AI\\
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Experience
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience}
+\runsubsection{The University of Texas at Austin}\descript{| Student Researcher}\hfill \location{Austin, TX | August 2016 – Present}
+\begin{tightemize}
+	\item Cooperate with three team members to develop tools to automate 3-D printer error detection
+	\item Feed object images to a customized neural network to generate accuracy precentage
+	\item Write scripts to dynamically detect and modify different flavors of 3-D printer instructions
+	\item Develop a system to notify users through email when accuracy level drops below cetain threshold
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{ l l }
+	\descript{Programming Languages} & {\location{C/C++, Java, Go, Python, Javascript, \LaTeX, Unix shells}} \\
+	\descript{Frameworks}			 & {\location{iOS, OpenMP, NodeJS, Tensorflow, Numpy, Matplotlib}}		\\
+	\descript{Techonology}           & {\location{Linux, GCC/Clang, Docker, Nvidia CUDA, Git, Vim, HTML}}                           \\
+\end{tabular}
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Projects
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\raggedright
+
+\runsubsection{\large{PintOS}}
+\descript{| A functional Operating System implemented in C}\\
+\begin{tightemize}
+	\item Implement the scheduling system with multilevel feedback queue and priority donation.
+	\item Implement most system level API such as exit() and kill()
+	\item Design a virtual memory system with single-level page table implementation
+	\item Construct a Linux-like ext3 file system
+\end{tightemize}
+\sectionsep
+  
+
+\runsubsection{\large{Parallel K-means algorithm}}
+\descript{| Performance scaling by utilizing x86 multicore architecture}\hfill \\
+\begin{tightemize}
+	\item Implement K-means algorithm in C++ and distribute computations onto Unix pthreads using C++11 synchronization standard
+	\item Manual implementation of synchronization mechanism such as Mutex, Spinlock, and barrier
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\large{Mine Sweeper}}
+\descript{| Neural Network training}\\
+Implement a three-layer neural network in Python to increase game units' efficency in sweeping mine using Pygame framework\\
+\sectionsep
+
+\runsubsection{\large{File Compressor}}
+\descript{| A Java program to compress and uncompress files}\\
+A simplt Java command line tool using Huffman coding to modify file data in any formats\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Extracurricular}
+\runsubsection{\large{HackTX} }\hfill \location{Austin, TX | January 2016 - May 2020} \\
+Design an Android app to extract product order information from Adidas offical website with a team of three\\
+\sectionsep
+\runsubsection{Coding Blog} \hfill \location{https://bdhu.github.io/} \\
+Share my personal experience and difficulties encountered during programming, and new features of programming languages.
+\sectionsep
+
+\runsubsection{Linux Kernel Hacking} \\
+I'm mostly interested in memory management subsystem and how virtualization is utilized.\\
+
+\end{document}
