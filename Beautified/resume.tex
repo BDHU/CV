@@ -40,10 +40,9 @@ Concurrency, Operating Systems, Computer Architecture, Algorithms and Complexity
 \section{Experience}
 \runsubsection{The University of Texas at Austin}\descript{| Student Researcher}\hfill \location{Austin, TX | August 2016 – Present}
 \begin{tightemize}
-	\item Cooperate with three team members to develop tools to automate 3-D printer error detection
-	\item Feed object images to a customized neural network to generate accuracy precentage
-	\item Write scripts to dynamically detect and modify different flavors of 3-D printer instructions
-	\item Develop a system to notify users through email when accuracy level drops below cetain threshold
+	\item Cooperated with a team of three to develop tools that automate 3-D printer error detection
+	\item Designed a neural network to predict error type present in flawed objects
+	\item Wrote Python scripts to dynamically detect and modify different flavors of 3-D printer instructions
 \end{tightemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -55,7 +54,7 @@ Concurrency, Operating Systems, Computer Architecture, Algorithms and Complexity
 \raggedright
 \begin{tabular}{ l l }
 	\descript{Programming Languages} & {\location{C/C++, Java, Go, Python, Javascript, \LaTeX, Unix shells}} \\
-	\descript{Frameworks}			 & {\location{iOS, OpenMP, NodeJS, Tensorflow, Numpy, Matplotlib}}		\\
+	\descript{Frameworks}			 & {\location{OpenMP, NodeJS, Tensorflow, Numpy, Matplotlib}}		\\
 	\descript{Techonology}           & {\location{Linux, GCC/Clang, Docker, Nvidia CUDA, Git, Vim, HTML}}                           \\
 \end{tabular}
 \sectionsep
@@ -70,18 +69,25 @@ Concurrency, Operating Systems, Computer Architecture, Algorithms and Complexity
 \runsubsection{\large{PintOS}}
 \descript{| A functional Operating System implemented in C}\\
 \begin{tightemize}
-	\item Implement the scheduling system with multilevel feedback queue and priority donation.
-	\item Implement most system level API such as exit() and kill()
-	\item Design a virtual memory system with single-level page table implementation
-	\item Construct a Linux-like ext3 file system
+	\item Implemented the scheduling system with multilevel feedback queue and priority donation.
+	\item Implemented system level API such as exit() and kill()
+	\item Designed a virtual memory system with single-level page table implementation
+	\item Constructed a Linux-like ext3 file system
 \end{tightemize}
 \sectionsep
   
+\runsubsection{\large{C Thread Pool}}
+\descript{| A thread pool implemented in C with Go-like functionality}\\
+\begin{tightemize}
+	\item A thread pool with task structs mapped upon pthreads with performance close to Golang goroutine
+	\item Dynamic load balance thread pool with a thread daemon
+	\item Synchronization mechanisms between task structs borrowed from Go
+\end{tightemize}
 
 \runsubsection{\large{Parallel K-means algorithm}}
 \descript{| Performance scaling by utilizing x86 multicore architecture}\hfill \\
 \begin{tightemize}
-	\item Implement K-means algorithm in C++ and distribute computations onto Unix pthreads using C++11 synchronization standard
+	\item Implemented K-means algorithm in C++ and distributed computations upon Unix pthreads using C++11 synchronization standard
 	\item Manual implementation of synchronization mechanism such as Mutex, Spinlock, and barrier
 \end{tightemize}
 \sectionsep
@@ -90,10 +96,6 @@ Concurrency, Operating Systems, Computer Architecture, Algorithms and Complexity
 \descript{| Neural Network training}\\
 Implement a three-layer neural network in Python to increase game units' efficency in sweeping mine using Pygame framework\\
 \sectionsep
-
-\runsubsection{\large{File Compressor}}
-\descript{| A Java program to compress and uncompress files}\\
-A simplt Java command line tool using Huffman coding to modify file data in any formats\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %     Awards
