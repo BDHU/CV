@@ -25,10 +25,6 @@
 \raggedright
 
 \runsubsection{The University of Texas at Austin}\descript{| BS Computer Science}\hfill \location{Austin, TX | January 2016 - May 2020}\\
-\begin{tightemize}
-	\item {\bfseries Coursework:} Multicore OS, NLP, Concurrency, Operating Systems, Artificial Intelligence, Neural Network, Computer Architecture, Algorithm\
-\end{tightemize}
-
 %GPA: 3.72\\
 
 \sectionsep
@@ -41,29 +37,23 @@
 \runsubsection{H3C}\descript{| Software Engineering Intern}\hfill \location{Chengdu, China | June 2018 – August 2018}
 \begin{tightemize}
 	\item Reconstructed mjpg-streamer (open sourced) to boost mjpg streams processing efficiency by 10\% and utilized the framework in autonomous driving demo.
-	\item Leveraged knowledge in Linux v4l2-ioctl to perform deep analysis on mjpg stream latency.
-	\item Utilized Kubernetes to manage compute cluster in H3C Open Cloud group.
+	\item Implemented a script to analyze mjpg stream processing delay.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{Wisesoft}\descript{| Junior Software Engineer}\hfill \location{Chengdu, China | May 2017 – July 2017}
 \begin{tightemize}
-	\item Implemented algorithms in Tensorflow to apply neural network pruning on voice recognition models used to identify and classify communication data collected from air traffic control.
-	\item Improved recurrent neural network structure to improved the voice recognition rate by 0.7 \%.
-	\item Categorized how quantization affect performances of different components in the voice recognition model.
-	\item Facilitated tools to automate the process of preprocessing training files and labels.
-	\item Isolated data processing and training to reduce pressure upon IO.
+	\item Implemented Python scripts to automatically apply optimizations on voice recognition model to improve inference speed with Tensorflow tools.
+	\item Implemented scripts to automatically test how different optimization methods affect neural network performance.
+	\item Implemented Python scripts to preprocess training voice files before training.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{The University of Texas at Austin}\descript{| Student Researcher}\hfill \location{Austin, TX | August 2016 – Present}
 \begin{tightemize}
-	\item Cooperated with a team of three to develop tools that automate 3-D printer error detection.
+	\item Cooperated with a team of three to develop tools that automate 3-D printer error detection
 %	\item Designed a neural network to predict error type present in flawed objects
-	\item Implemented tools to dynamically detect and modify 3-D printer instructions (gcode) based on their corresponding syntax.
-	\item Overcome the difficulty of collecting training data by designing applications on Raspberry Pi to periodically collect images from camera by user-defined time frames.
-	\item Incorporated tools to automate notifications to users through Gmail services about the condition in 3D printer.
-	\item Classified the major types of defects existing during 3D printing and developed methods to artificially generate the defects for training.
+	\item Wrote Python scripts to dynamically detect and modify different flavors of 3-D printer instructions
 	
 
 \end{tightemize}
@@ -78,26 +68,11 @@
 \section{Projects}
 \raggedright
 
-\runsubsection{\large{Home Automated Irrigation System}}
-\descript{| A Program on Raspberry Pi to control irrigation time}\\
-\begin{tightemize}
-	\item A program operating on Raspberry Pi that can turn the tap on of off based user-defined parameters.
-%	\item Synchronization mechanisms between task structs borrowed from Go
-\end{tightemize}
-\sectionsep
-
-\runsubsection{\large{ShadowSocks}}
-\descript{| Modified a socks5 proxy to bypass firewall restriction}\\
-\begin{tightemize}
-	\item Automate the process of setting up Shadowsocks on remote servers.
-\end{tightemize}
-\sectionsep
-
-
 \runsubsection{\large{C Thread Pool}}
 \descript{| A thread pool implemented in C with Go-like functionality}\\
 \begin{tightemize}
 	\item A thread pool with task structs mapped upon pthreads with performance close to Golang goroutine
+	\item Load balancing thread pool with a thread daemon
 %	\item Synchronization mechanisms between task structs borrowed from Go
 \end{tightemize}
 \sectionsep
@@ -112,15 +87,22 @@
 \end{tightemize}
 \sectionsep
 
-%\runsubsection{\large{Mine Sweeper}}
-%\descript{| Neural Network training}\\
-%\begin{tightemize}
-%	\item Implement a three-layer neural network in Python to increase game units' efficency in sweeping mine using Pygame framework\\
-%\end{tightemize}
-%\sectionsep
+\runsubsection{\large{Parallel K-means algorithm}}
+\descript{| Performance scaling by utilizing x86 multicore architecture}\hfill \\
+\begin{tightemize}
+	\item Implemented K-means algorithm in C++ and distributed computations upon Unix pthreads using C++11 synchronization standard
+\end{tightemize}
+\sectionsep
 
-%\section{Coursework}
-%Multicore OS, NLP, Concurrency, Operating Systems, Artificial Intelligence, Neural Network, Computer Architecture, Algorithm\
+\runsubsection{\large{Mine Sweeper}}
+\descript{| Neural Network training}\\
+\begin{tightemize}
+	\item Implement a three-layer neural network in Python to increase game units' efficency in sweeping mine using Pygame framework\\
+\end{tightemize}
+\sectionsep
+
+\section{Coursework}
+Multicore OS, NLP, Concurrency, Operating Systems, Artificial Intelligence, Neural Network, Computer Architecture, Algorithm\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
