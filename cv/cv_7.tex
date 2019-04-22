@@ -1,0 +1,325 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{ Edward} % Your first name
+\familyname{Hu} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+%\address{116 RKB, IIT Roorkee}{Uttarakhand, India 247667}
+\mobile{512 517 0598 }
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{bodunhu@utexas.edu}
+\homepage{bodunhu.com}{www.bodunhu.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\href{https://github.com/BDHU}{Github: bdhu}}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2016--2020}{B.S. in Computer Science}{The University of Texas at Austin}{Austin TX}{}{}  % Arguments not required can be left empty
+\subsection{Related Courses}
+\cventry{}{}{}{}{}{Multicore OS, Concurrency, Parrallel Computing, Operating Systems, Networks, AI, Neural Network, Computer Architecture, Algorithm, NLP}
+\subsection{Research Interests}
+\cventry{}{}{}{}{}{Operating Systems, GPUs, Heterogeneous Systems, Distributed Computing \& Systems, ML Systems}
+%\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
+%\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
+%\section{%Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%\subsection{%Vocational}
+% \cvitem{2018--present}{\textbf{Recobell} \textit{Seoul Korea, https://www.recobell.com/   } -- Data Scientist}
+
+\cventry{2018 -- present}{UTCS System Research Lab}{Austin TX}{Researcher}{\textsc{Advisor:  Christopher Rossbach}}{
+The use of graphics processing units (GPUs) has become
+increasingly popular in accelerated computing in industry
+in recent years. Existing benchmark suites such as Rodinia were designed to better understand heterogeneous systems. But these tools failed to keep up with the rapid evolution of GPU. We develop a new benchmark suite to better demonstrate the diversity of GPU workloads, applications, and GPU resource usage, with emphasis on neural network workload characterizations and new CUDA features.}
+%commented out cotents
+%\begin{itemize}
+% \item Implemented various image segmentation models like U-Net, SegNet, etc.
+% \item Currently working on satellite imagery.
+% \item Created tests and automation scripts.
+% \end{itemize}
+
+
+\cventry{2016 -- 2017}{UTCS AI Research Lab}{Austin TX}{Student Researcher}{\textsc{Advisor:  Cem Tutum}}{
+3-D printing has introduced many possibilities into the manufacturing industry. However, detecting object defection in real time requires expensive equipment inaccessible to many. With a team of four, we classified the types of error presented in 3-D printing. Because there were no previous work for reference, we delivered a framework to automate the process of data collection by alternating Gcode instructions, which facilitated the training of neural networks used to classify error type present in collected data.
+}
+
+\renewcommand{\listitemsymbol}{\textcolor{black}{-~}}
+\cventry{June -- Aug 2018}{H3C}{Chengdu, China}{Software Engineering Intern}{}{
+\begin{itemize}
+    \item Reconstructed mjpg-streamer to increase jpg streams efficiency in Linux by ten percent.
+    \item Participated in the integration of Apollo autonomous vehicle driving system into H3C cloud platform (in Go). 
+\end{itemize}
+}
+
+\cventry{June -- Aug 2017}{Wisesoft}{Chengdu, China}{Junior Software Engineer}{}{
+\begin{itemize}
+    \item Implemented the neural network module (in Tensorflow) to process audio files using FFT(Fourier transformation). It is used in a production level system used to classify communication in air traffic control system.
+    \item Constructed a tool set to automatically prune neural network models and organize training data files. Deployed into production systems.
+\end{itemize}
+}
+
+%comment out
+% \begin{itemize}
+% \item Implemented research papers based on \textsc{Finance and Quant trading}.
+% \item Wrote a \textsc{MLP classifier} to generate trade signals that increased the accuracy by 1.02\%.
+% \item Implemented LSTM for stock price prediction.
+% \end{itemize}
+
+%------------------------------------------------
+
+%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+
+\section{Projects}
+
+\cventry{Jan 2019}{GUPS on GPU}{\textit{Random Memory Access on GPU}}{}{}{
+\begin{itemize}
+\item Constructed random memory access program to stress the dram capability of GPU with several optimizations. 
+\end{itemize}}
+
+\cventry{April 2019}{FDTD in Cuda Graph}{\textit{Reimplementation in Cuda Graph}}{}{}{
+\begin{itemize}
+\item Rewrote part of fdtd(Finite-difference time-domain method) using Cuda graph to test new Cuda features.
+\end{itemize}}
+
+\cventry{April 2019}{Multicore Operating System Implementation }{a capability-based research OS by ETH Zurich}{}{}{
+\begin{itemize}
+\item Implemented physical memory management and process spawning based on Barrelfish kernel.
+\item Implemented messege passing in LMP and RPC for processes to communicate in a multicore system. 
+\end{itemize}}
+
+\cventry{Spring 2018}{Kmeans in CUDA MPI }{Kmeans in NUMA}{}{}{
+\begin{itemize}
+\item Developed kmeans with focus on MPI communication on TACC super computer to test program scalability.
+\end{itemize}}
+
+\cventry{Spring 2018}{Thread Pool in C }{a thread pool implemented in C}{}{}{
+\begin{itemize}
+\item Designed a thread pool with tasks mapped upon pthreads to simulate the design of Go routines.
+\end{itemize}}
+
+% \cventry{Spring 2019}{Neural Arithmetic Logic Units \href{https://github.com/sinAshish/NALU-Keras}{[Code]}}{\textit{Self-motivated}}{}{}{
+% \begin{itemize}
+% \item Implemented the paper \textit{Neural Arithmetic Logic Units} by Trask et. al. in Keras.
+% \item The code does \textit{arithmetic operations} only, for now.
+% \end{itemize}}
+ 
+% \cventry{Aug 2018-- Oct 2018}{MURA (musculoskeletal radiographs) X-Ray Classification \href{https://github.com/sinAshish/Stanford-MURA}{[Code]}}{\textit{Self-motivated}}{}{}{
+% \begin{itemize}
+% \item Implemented the original paper to reproduce the results.
+% \item Optimized  the hyperparameters to beat the baseline score.
+% \item Used pretrained models like DenseNet50, ResNet169 among others with attention for classification.
+% \end{itemize}}
+ 
+% \cventry{Oct 2018}{Dynamic Memory Networks Plus \href{https://github.com/sinAshish/dmn-plus}{[Code]}}{\textit{Self-motivated}}{}{}{
+% \begin{itemize}
+% \item Implemented the paper \textit{Dynamic Memory Networks for Visual and Textual Question Answering} in PyTorch.
+% \item Model trained on BaBI dataset.
+% \end{itemize}}
+
+% \cventry{May 2018--  Aug 2018}{Simplifying Rough Sketches Using Deep Learning \href{https://github.com/sinAshish/Rough-Sketch-Simplification-Using-FCNN}{[Code]}}{\textit{Self-motivated}}{}{}{
+% \begin{itemize}
+% \item Implemented the paper \textit{Learning to Simplify: Fully Convolutional Networks for Rough Sketch Cleanup} by Simo-Serra et. al in PyTorch.
+% \item Implemented an Encoder-Decoder architecture.
+% \end{itemize}}
+
+% \cventry{ Nov 2018}{Quora Insincere Question Classification}{\textit{Self-motivated}}{}{}{
+% \begin{itemize}
+% \item Implemented a CNN-LSTM architecture with attention to detect toxic content in online media. 
+% \item Achieved an F1-Score of 0.73.
+% \end{itemize}}
+
+%\cventry{ Mar 2017}{Gaana (Songs) Downloader \href{https://github.com/sinAshish/Gaana-Downloader}{[Code]}}{\textit{Self-motivated}}{}{}{
+%\begin{itemize}
+%\item A script to download all the songs from \href{https://www.gaana.com}{gaana.com} by just entering the album name.
+%\end{itemize}}
+%
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Achievements}
+
+% \cventry{July 2018}{Humpback Whale Identification Challenge}{\textit{Kaggle}}{}{}{
+% \begin{itemize}
+% \item Ranked 64 among 528 teams( TOP 13\%) in the Whale Identification Challenge.
+% \item Used Transfer Learning with ResNet50.
+% \end{itemize}}
+
+% \cventry{Oct 2018}{TGS Salt Identification Challenge}{\textit{Kaggle}}{}{}{
+% \begin{itemize}
+% \item Ranked 589 among 2754 teams( TOP 22\%) in the task to segment salt deposits beneath Earth's surface.
+% \item Used UNet with ResNet50 as encoder.
+% \end{itemize}}
+
+% \cventry{Aug 2018}{Home Credit Default Risk}{\textit{Kaggle}}{}{}{
+% \begin{itemize}
+% \item Ranked 1685 among 7198 teams( TOP 24\%) in the Home Credit Default Risk Challenge.
+% \item Used LightGBM and XGBoost with weighted ensemble.
+% \end{itemize}}
+
+% \cventry{Nov 2018}{Human Protein Atlas Image Classification}{\textit{Kaggle}}{}{}{
+% \begin{itemize}
+% \item Ranked in the TOP 17\%(now) in the multiclass multilabel protein classification challenge.
+% \item Used ResNet50 as base model.
+% \end{itemize}}
+
+
+% \cventry{Oct 2018}{Quick Draw! Doodle Recognition Challenge}{\textit{Kaggle}}{}{}{
+% \begin{itemize}
+% \item Ranked in the TOP 29\% in the Doodle Recognition Challenge.
+% \item Trained an ImageNet model from scratch, by constructing images from stokes.
+% \end{itemize}}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Languages}{Python, C/C++, Java, Go, Rust}
+\cvitem{Frameworks}{OpenMP, MPI, PyTorch, Tensorflow, Cuda, Jekyll}
+% \cvitem{WebD}{HTML/CSS, JavaScript, Jekyll}
+% \cvitem{Utilities}{Anaconda, Git, Sublime Text, Jupyter Notebook}
+% \cvitem{Communication}{English(SRW), Hindi(SRW), Japanese(SO)}
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Relevant Courses}
+
+% \cvitem{Online}{Convolutional Neural Networks for Visual Recognition, Deep Learning for NLP, Deep Learning.Ai Specialization, Introduction to Machine Learning, Introduction to Statistics and Probability}
+% \cvitem{Classroom}{ Linear Algebra, Differential Calculus, Differential Equations, Economics, Marketing Research, Environmental Economics}
+
+% \section{Extra Curriculars}
+
+% \cventry{Apr 2018}{Vision and Language Group}{\textit{Executive Member}}{}{}{ The group aims to foster Deep Learning research among students by conducting discussions and implementations on various Research Papers in the field of Computer Vision and NLP. I implemented a paper on DC-GAN and Neural Style Transfer.
+% }
+
+% \cventry{Oct 2017}{Enactus IIT Roorkee Chapter}{\textit{Executive Member}}{}{}{ The Campus group works towards Socail Entreprenership. I was a part of the Kaagaz Project.
+% }
+
+% \cventry{Jan 2018}{Academic Reinforcement Program}{\textit{Teaching Assistant}}{}{}{ Taught General Chemistry(CYN-006) to a batch of 86 students.
+% }
+% \cventry{Jul 2018}{Academic Reinforcement Program}{\textit{Teaching Assistant}}{}{}{ Taught Intro to Computer Programming in C++(MTN-103) to a batch of 80 students.
+% }
+
+% \cventry{Feb 2018}{Sangram IIT Roorkee}{\textit{Web Developer}}{}{}{ Developed the website for Sangram, IIT Roorkee, the official annual Sports fest of IIT Roorkee.
+% }
+
+% \cventry{Dec 2015}{Quizense}{\textit{Founder}}{}{}{ Started a start-up along with 3 others that aimed to conduct Quizzes for various schools and fests.
+% }
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cycling}{Hiking}
+%\cvlistdoubleitem{Sketching}{Gaming}
+%\cvlistitem{Quizzing}
+%----------------------------------------------------------------------------------------
+
+% \section{References}
+
+% \begin{multicols}{2}
+% \cventry{}{K.S Suresh}{\newline Assistant Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline suresfmt@iitr.ac.in}{}
+% \columnbreak
+% \cventry{}{Anu Chandra}{\newline CEO}{\newline Ryelore AI}{\newline anu@ryelore.com}{ }
+% \end{multicols}
+% %\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
+
+% %\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
+\end{document}
