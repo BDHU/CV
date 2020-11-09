@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{multicol}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[hyperref]{}
+\usepackage[scale=0.9]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Bodun} % Your first name
+\familyname{Hu} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+%\address{116 RKB, IIT Roorkee}{Uttarakhand, India 247667}
+\mobile{512 517 0598 }
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{bodunhu@utexas.edu}
+\homepage{bodunhu.com}{www.bodunhu.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{\href{https://github.com/BDHU}{Github: bdhu}}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Research Interests}
+\cventry{}{}{}{}{}{
+Operating Systems, Heterogeneity, Virtualization, Distributed Systems, Networking, ML Systems
+}
+
+
+\section{Education}
+
+\cventry{2020--present}{M.S. in Computer Science}{The University of Texas at Austin}{Austin TX}{}{}
+\cventry{2016--2020}{B.S. in Computer Science}{The University of Texas at Austin}{Austin TX}{}{}  % Arguments not required can be left empty
+%\subsection{Research Interests}
+%\cventry{}{}{}{}{}{Operating Systems, Heterogeneity, Virtualization, Distributed Systems, Networking, ML Systems}
+%\subsection{Related Courses}
+%\cventry{}{}{}{}{}{Advanced OS, Data Center, Dependable System, Wireless Networks, Multicore OS, Concurrency, Parrallel Computing, Operating Systems, Networks, AI, Neural Network, Computer Architecture, Algorithm}
+%\cventry{2016}{D.A.V. Public School, Bistupur}{\newline Mathematics and Computer Science}{Class 12}{}{GPA -- 94.00\%}  % 
+%\cventry{2014}{A.D.L.S. Sunshine School, Sakchi}{\newline Mathematics and Computer Science}{Class 10}{}{GPA -- 95.20\%}  %
+%\section{%Masters Thesis}
+
+%\cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+%\cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+
+\section{Papers}
+\cventry{[1]}{}{}{}{}{
+\textbf{Bodun Hu} and Christopher J. Rossbach. Altis: Modernizing GPGPU Benchmarks. In \textit{Proceedings of the 2020 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)}, August 2020. 14p 29.5\%.
+}
+
+\cventry{[2]}{}{}{}{}{
+Hangchen Yu, \textbf{Bodun Hu}, Ariel Szekely, and Christopher J. Rossbach. AKATHA: Accelerating Kernel Access to Hardware Acceleration. Currently on submission to EuroSys 2021, October 2020.
+}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cventry{2020}{}{}{}{}{
+2020 ISPASS Student Travel Award.
+}
+\cventry{2020}{}{}{}{}{
+Research Distinction by the College of Natural Sciences.
+}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiences}
+
+%\subsection{%Vocational}
+% \cvitem{2018--present}{\textbf{Recobell} \textit{Seoul Korea, https://www.recobell.com/   } -- Data Scientist}
+
+\cventry{2018 -- 2020}{UTCS System Research Lab}{Austin TX}{Research Assistant}{\textsc{Advisor:  Christopher Rossbach}}{}
+%The use of graphics processing units (GPUs) has become
+%increasingly popular in accelerated computing in industry
+%in recent years. Existing benchmark suites such as Rodinia were designed to better understand heterogeneous systems. But these tools failed to keep up with the rapid evolution of GPU. We develop a new benchmark suite to better demonstrate the diversity of GPU workloads, applications, and GPU resource usage, with emphasis on neural network workload characterizations and new CUDA features.}
+
+\cventry{2019 -- 2020}{UTCS System Research Lab}{Austin TX}{Research Assistant}{\textsc{Advisor:  Simon Peter}}{}
+%The use of graphics processing units (GPUs) has become
+%increasingly popular in accelerated computing in industry
+%in recent years. Existing benchmark suites such as Rodinia were designed to better understand heterogeneous systems. But these tools failed to keep up with the rapid evolution of GPU. We develop a new benchmark suite to better demonstrate the diversity of GPU workloads, applications, and GPU resource usage, with emphasis on neural network workload characterizations and new CUDA features.
+
+%commented out cotents
+%\begin{itemize}
+% \item Implemented various image segmentation models like U-Net, SegNet, etc.
+% \item Currently working on satellite imagery.
+% \item Created tests and automation scripts.
+% \end{itemize}
+
+\cventry{2016 -- 2017}{UTCS AI Research Lab}{Austin TX}{Research Assistant}{\textsc{Advisor:  Cem Tutum}}{}
+%3-D printing has introduced many possibilities into the manufacturing industry. However, detecting object defection in real time requires expensive equipment inaccessible to many. With a team of four, we classified the types of error presented in 3-D printing. Because there were no previous work for reference, we delivered a framework to automate the process of data collection by alternating Gcode instructions, which facilitated the training of neural networks used to classify error type present in collected data.
+
+%\renewcommand{\listitemsymbol}{\textcolor{black}{-~}}
+%June -- Aug 
+\cventry{2018}{H3C}{Chengdu, China}{Software Engineering Intern}{}{}
+%\begin{itemize}
+%    \item Reconstructed mjpg-streamer to increase jpg streams efficiency in Linux by ten percent.
+%    \item Participated in the integration of Apollo autonomous vehicle driving system into H3C cloud platform (in Go). 
+%\end{itemize}
+
+\cventry{2017}{Wisesoft}{Chengdu, China}{Junior Software Engineer}{}{}
+%\begin{itemize}
+%    \item Implemented the neural network module (in Tensorflow) to process audio files using FFT. It is used in a production level system used to classify communication in air traffic control system.
+%\end{itemize}
+
+\cventry{2015}{Lenovo}{Chengdu, China}{Marketing Intern}{}{}
+
+%\cventry{2011--2012}{Summer Intern}{\textsc{Lehman Brothers}}{Los Angeles}{}{Rated "truly distinctive" for Analytical Skills and Teamwork.}
+
+%------------------------------------------------
+\section{Teaching Experience}
+\cventry{Spring 2020}{TA: Multicore Operating System Implementation (378)}{The University of Texas at Austin}{}{}{Instructor: Simon Peter}
+
+\section{Talks}
+\cventry{Aug 2020}{}{}{}{}{\textit{Altis: Modernizing GPGPU Benchmarking}, presented at ISPASS'20}
+
+
+\section{Selected Projects}
+
+\cventry{}{Altis}{\href{https://github.com/utcs-scea/altis}{https://github.com/utcs-scea/altis}}{}{}{
+\begin{itemize}
+\item A new benchmark suite for modern GPGPU benchmarking.
+\end{itemize}
+}
+
+\cventry{}{AKATHA}{\href{https://github.com/yuhc/kava}{https://github.com/yuhc/kava}}{}{}{
+\begin{itemize}
+\item Automatic kernel accelerator support construction.
+\end{itemize}
+}
+
+%\cventry{April 2019}{FDTD in Cuda Graph}{\textit{Reimplementation in Cuda Graph}}{}{}{
+%\begin{itemize}
+%\item Rewrote part of fdtd(Finite-difference time-domain method) using Cuda graph to test new Cuda features.
+%\end{itemize}}
+
+\cventry{}{Multicore Operating System Implementation}{a capability-based research OS by ETH Zurich}{}{}{
+\begin{itemize}
+\item Implemented core infrastructures including physical memory management, capability initialization, ELF parser, LRPC, RDMA based on Barrelfish OS.
+\end{itemize}
+}
+
+\cventry{}{bdOS}{}{}{}{
+\begin{itemize}
+\item A microkernel based OS written in Rust.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Tools}{Python, C/C++, Java, Go, Rust, Haskell, Matlab}
+\cvitem{Frameworks}{OpenMP, MPI, PyTorch, Tensorflow, CUDA, Jekyll}
+\cvitem{Languages}{English (fluent), Chinese(fluent)}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Cycling}{Hiking}
+%\cvlistdoubleitem{Sketching}{Gaming}
+%\cvlistitem{Quizzing}
+%----------------------------------------------------------------------------------------
+
+% \section{References}
+
+% \begin{multicols}{2}
+% \cventry{}{K.S Suresh}{\newline Assistant Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline suresfmt@iitr.ac.in}{}
+% \columnbreak
+% \cventry{}{Anu Chandra}{\newline CEO}{\newline Ryelore AI}{\newline anu@ryelore.com}{ }
+% \end{multicols}
+% %\cventry{}{Arpit Gupta}{\newline VP Engineering}{\newline Antriex IT Services}{\newline arpit.gupta@antmex.com}{}
+
+% %\cventry{}{B.S.S Daniel}{\newline Professor}{\newline Metallurgical and Materials Engg., IIT Roorkee}{\newline s4danfmt@iitr.ac.in}{ }
+\end{document}
